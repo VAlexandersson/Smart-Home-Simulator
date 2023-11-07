@@ -1,0 +1,165 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Directory for build outputs
+/bin/
+/obj/
+/build/
+/dist/
+*.o.d
+
+# Dependency directories
+/deps/
+
+# Auto-generated documentation
+/docs/doxygen/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Editor directories and files
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.vscode/
+
+# Operating system generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.make
+*.cmake
+
+# CMake specific files
+*.user
+*.user.*
+*.qbs
+*.pro.user
+*.pro.user.*
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Build-specific files
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.service
+*.directory
+
+# Other build systems
+*.cbp
+*.bak
+*.ncb
+*.sln
+*.sdf
+*.ipch
+*.ilk
+*.aps
+*.mdf
+*.lib
+*.pdb
+*.exp
+*.VC.db
+*.VC.VC.opendb
+
+# Benchmarking output
+*.measurement
+
+# Environment files
+.env
+.env.*
+
+# Ignore npm modules folder in node (if using node.js in conjunction with C++)
+/node_modules/
+
+# Ignore Python virtual environments (if using Python scripts for tooling or testing with C++)
+/venv/
+/env/
+/pyvenv.cfg
+*.pyc
+
+# LaTeX temporary files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.cb
+*.ind
+*.idx
+*.ilg
+*.inx
+*.log
+*.out
+*.toc
+
+# Others
+*.class
+*.mo
+*.pot
+*.sdf
+*.nupkg
+*.cache
+*.bak
+*~
+*.swp

@@ -1,0 +1,8 @@
+# ninja log v5
+416	487	1699379594257941310	Smart_Home_Simulator	ce0695737fb60f12
+10	44	1699382048783106330	build.ninja	a31c547bb56e738a
+0	416	1699379594187940861	CMakeFiles/Smart_Home_Simulator.dir/src/main.cpp.o	d571e1ffc7800f8a
+1	299	1699382589279847628	CMakeFiles/Smart_Home_Simulator.dir/src/Device.cpp.o	298a34daedaef350
+299	357	1699382589337847922	Smart_Home_Simulator	8b6bd625b7a14651
+1	517	1699382670389259000	CMakeFiles/Smart_Home_Simulator.dir/src/main.cpp.o	d571e1ffc7800f8a
+517	588	1699382670458259350	Smart_Home_Simulator	8b6bd625b7a14651
