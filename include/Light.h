@@ -3,9 +3,17 @@
 #include "Device.h"
 
 class Light : public Device {
+private:
+    bool state = false;
 public:
-    void turnOn() override;
-    void turnOff() override;
+    Light() : state(false) {}
+    void turnOn() override {
+        state = true;
+    }
+    void turnOff() override {
+        state = false;
+    }
+    bool getState() const override { return state; }
 };
 
 #endif //SMART_HOME_SIMULATOR_LIGHT_H

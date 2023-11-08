@@ -9,15 +9,14 @@ protected:
 
 TEST_F(LightTest, TurnsOn) {
 light.turnOn();
-ASSERT_TRUE(light.isOn());
+ASSERT_TRUE(light.getState());
 }
 
 TEST_F(LightTest, TurnsOff) {
 light.turnOff();
-ASSERT_FALSE(light.isOn());
+ASSERT_FALSE(light.getState());
 }
 
-// Main function to run all tests
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
