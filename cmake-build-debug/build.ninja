@@ -138,6 +138,13 @@ build src/CMakeFiles/Smart_Home_Simulator_lib.dir/Light.cpp.o: CXX_COMPILER__Sma
   OBJECT_DIR = src/CMakeFiles/Smart_Home_Simulator_lib.dir
   OBJECT_FILE_DIR = src/CMakeFiles/Smart_Home_Simulator_lib.dir
 
+build src/CMakeFiles/Smart_Home_Simulator_lib.dir/Schedule.cpp.o: CXX_COMPILER__Smart_Home_Simulator_lib_unscanned_Debug /home/viktor/CLionProjects/Smart$ Home$ Simulator/src/Schedule.cpp || cmake_object_order_depends_target_Smart_Home_Simulator_lib
+  DEP_FILE = src/CMakeFiles/Smart_Home_Simulator_lib.dir/Schedule.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I"/home/viktor/CLionProjects/Smart Home Simulator/include"
+  OBJECT_DIR = src/CMakeFiles/Smart_Home_Simulator_lib.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/Smart_Home_Simulator_lib.dir
+
 build src/CMakeFiles/Smart_Home_Simulator_lib.dir/main.cpp.o: CXX_COMPILER__Smart_Home_Simulator_lib_unscanned_Debug /home/viktor/CLionProjects/Smart$ Home$ Simulator/src/main.cpp || cmake_object_order_depends_target_Smart_Home_Simulator_lib
   DEP_FILE = src/CMakeFiles/Smart_Home_Simulator_lib.dir/main.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
@@ -153,7 +160,7 @@ build src/CMakeFiles/Smart_Home_Simulator_lib.dir/main.cpp.o: CXX_COMPILER__Smar
 #############################################
 # Link the static library src/libSmart_Home_Simulator_lib.a
 
-build src/libSmart_Home_Simulator_lib.a: CXX_STATIC_LIBRARY_LINKER__Smart_Home_Simulator_lib_Debug src/CMakeFiles/Smart_Home_Simulator_lib.dir/Light.cpp.o src/CMakeFiles/Smart_Home_Simulator_lib.dir/main.cpp.o
+build src/libSmart_Home_Simulator_lib.a: CXX_STATIC_LIBRARY_LINKER__Smart_Home_Simulator_lib_Debug src/CMakeFiles/Smart_Home_Simulator_lib.dir/Light.cpp.o src/CMakeFiles/Smart_Home_Simulator_lib.dir/Schedule.cpp.o src/CMakeFiles/Smart_Home_Simulator_lib.dir/main.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src/CMakeFiles/Smart_Home_Simulator_lib.dir
   POST_BUILD = :
@@ -285,6 +292,13 @@ build src/install/strip: phony src/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_Smart_Home_Simulator_Test: phony || cmake_object_order_depends_target_Smart_Home_Simulator_lib cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
+build tests/CMakeFiles/Smart_Home_Simulator_Test.dir/TestDevice.cpp.o: CXX_COMPILER__Smart_Home_Simulator_Test_unscanned_Debug /home/viktor/CLionProjects/Smart$ Home$ Simulator/tests/TestDevice.cpp || cmake_object_order_depends_target_Smart_Home_Simulator_Test
+  DEP_FILE = tests/CMakeFiles/Smart_Home_Simulator_Test.dir/TestDevice.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I"/home/viktor/CLionProjects/Smart Home Simulator/include" -isystem "/home/viktor/CLionProjects/Smart Home Simulator/lib/googletest/googletest/include" -isystem "/home/viktor/CLionProjects/Smart Home Simulator/lib/googletest/googletest"
+  OBJECT_DIR = tests/CMakeFiles/Smart_Home_Simulator_Test.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/Smart_Home_Simulator_Test.dir
+
 build tests/CMakeFiles/Smart_Home_Simulator_Test.dir/TestLight.cpp.o: CXX_COMPILER__Smart_Home_Simulator_Test_unscanned_Debug /home/viktor/CLionProjects/Smart$ Home$ Simulator/tests/TestLight.cpp || cmake_object_order_depends_target_Smart_Home_Simulator_Test
   DEP_FILE = tests/CMakeFiles/Smart_Home_Simulator_Test.dir/TestLight.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
@@ -300,7 +314,7 @@ build tests/CMakeFiles/Smart_Home_Simulator_Test.dir/TestLight.cpp.o: CXX_COMPIL
 #############################################
 # Link the executable tests/Smart_Home_Simulator_Test
 
-build tests/Smart_Home_Simulator_Test: CXX_EXECUTABLE_LINKER__Smart_Home_Simulator_Test_Debug tests/CMakeFiles/Smart_Home_Simulator_Test.dir/TestLight.cpp.o | lib/libgtest_main.a src/libSmart_Home_Simulator_lib.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a src/libSmart_Home_Simulator_lib.a
+build tests/Smart_Home_Simulator_Test: CXX_EXECUTABLE_LINKER__Smart_Home_Simulator_Test_Debug tests/CMakeFiles/Smart_Home_Simulator_Test.dir/TestDevice.cpp.o tests/CMakeFiles/Smart_Home_Simulator_Test.dir/TestLight.cpp.o | lib/libgtest_main.a src/libSmart_Home_Simulator_lib.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a src/libSmart_Home_Simulator_lib.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtest_main.a  src/libSmart_Home_Simulator_lib.a  lib/libgtest.a
   OBJECT_DIR = tests/CMakeFiles/Smart_Home_Simulator_Test.dir

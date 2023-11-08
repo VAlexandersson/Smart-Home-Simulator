@@ -9,12 +9,12 @@ protected:
 
 TEST_F(LightTest, TurnsOn) {
 light.turnOn();
-ASSERT_TRUE(light.isOn());
+ASSERT_TRUE(light.getState());
 }
 
 TEST_F(LightTest, TurnsOff) {
 light.turnOff();
-ASSERT_FALSE(light.isOn());
+ASSERT_FALSE(light.getState());
 }
 
 int main(int argc, char **argv) {
