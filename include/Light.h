@@ -6,10 +6,12 @@ class Light : public Device {
 private:
     bool state = false;
 public:
-    Light() : state(false) {}
+    Light() : state(false) { }
+
     void turnOn() override {
         state = true;
     }
+
     void turnOff() override {
         state = false;
     }

@@ -1,8 +1,10 @@
 #include <iostream>
-#include <thread>
 #include "Controller.h"
 #include "Light.h"
 #include "Schedule.h"
+#include "Server.h"
+#include <asio.hpp>
+
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -14,7 +16,7 @@ int main() {
     lightController.addDevice(livingRoomLight);
     lightController.addDevice(kitchenLight);
 
-
+/*
     scheduler.addEvent(std::chrono::system_clock::now() + std::chrono::seconds(5), [&lightController] {
         lightController.turnAllOn();
         std::cout << "Living room light turned on." << std::endl;
@@ -34,10 +36,23 @@ int main() {
         }
     });
     eventThread.join();
+*/
+    Server server;
 
+    server.registerCommand("TURN ON LIGHT", [&lightController] {
+        lightController.turnAllOn();
+        std::cout << "Living room light turned on." << std::endl;
+    });
 
+    server.registerCommand("TURN OFF LIGHT", [&lightController]() {
+        lightController.turnAllOff();
+        std::cout << "Living room light turned off via network command." << std::endl;
+    });
+
+    std::thread serverThread([&server]() {server.start();});
+    std::cout << "Server started!" << std::endl;
+    serverThread.join();
 
     std::cout << "End of program." << std::endl;
     return 0;
-
 }
